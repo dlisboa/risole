@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Risole",
+  "description": "Pra quem não curte coxinha.",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.uol.com.br/*",
+        "https://*.uol.com.br/*",
+        "http://*.folha.uol.com.br/*",
+        "https://*.folha.uol.com.br/*",
+        "http://*.estadao.com.br/*",
+        "https://*.estadao.com.br/*",
+        "http://g1.globo.com/*",
+        "https://g1.globo.com/*"
+      ],
+      "js": ["risole.js"]
+    }
+  ],
+  "permissions": [
+    "http://*.uol.com.br/*",
+    "https://*.uol.com.br/*",
+    "http://*.folha.uol.com.br/*",
+    "https://*.folha.uol.com.br/*",
+    "http://*.estadao.com.br/*",
+    "https://*.estadao.com.br/*",
+    "http://g1.globo.com/*",
+    "https://g1.globo.com/*"
+  ]
+}
